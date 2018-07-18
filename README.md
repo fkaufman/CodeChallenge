@@ -10,5 +10,5 @@ To build:   You must have maven configured and running Java1.8 JDK
 
 To run:   The jar has been built as a shaded executable
 
-> java -jar CodeChallenge-<version>.jar
+> java -jar ./target/CodeChallenge-0.0.1-SNAPSHOT.jar
 

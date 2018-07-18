@@ -1,2 +1,2 @@
 
-java -jar ./target CodeChallenge-0.0.1-SNAPSHOT.jar
+java -jar ./target/CodeChallenge-0.0.1-SNAPSHOT.jar

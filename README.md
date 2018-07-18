@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 This is a coding challenge for a company that I'm interviewing with.
 It is a word auto-complete implementation which is similar to what you would find in a mobile
 telephone messaging app.  The model is first trained and then when given a prefix of a couple letters the auto-completer will find other relevant words and the confidence score of how many 
@@ -11,6 +11,4 @@ To build:   You must have maven configured and running Java1.8 JDK
 To run:   The jar has been built as a shaded executable
 
 > java -jar CodeChallenge-<version>.jar
-=======
-# CodeChallenge
->>>>>>> aa4715d9a9bc95fd776cff2f08597acde64420c1
+

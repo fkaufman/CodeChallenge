@@ -6,11 +6,13 @@ times that word occurs in the Trie.
 
 To build:   You must have maven configured and running Java1.8 JDK
 
-> build.sh 
+> ./build.sh 
 
 To run:   The jar has been built as a shaded executable
 
-> java -jar ./target/CodeChallenge-0.0.1-SNAPSHOT.jar
+ java -jar ./target/CodeChallenge-0.0.1-SNAPSHOT.jar
+
 or
-> run.sh  - will get you there too.
+
+ ./run.sh  - will get you there too.
 

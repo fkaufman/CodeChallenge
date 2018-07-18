@@ -33,6 +33,10 @@ public class RadixTrieWordComplete implements AutoCompleteProvider {
 
 	static Trie<String, Candidate> trie = new PatriciaTrie<>();
 	
+	/**
+	 * When passed a word fragment the prefix is passed into the Trie and all words
+	 *  that match that prefix will be returned.
+	 */
 	@Override
 	public List<Candidate> getWords(String fragment) {
 		SortedMap<String, Candidate> prefixMap = trie.prefixMap(fragment);
@@ -41,6 +45,10 @@ public class RadixTrieWordComplete implements AutoCompleteProvider {
 		return candidates;
 	}
 
+	/**
+	 * String passage which will be tokenized and added to the Trie structure.
+	 * Duplicates are handled by incrementing the confidence value.
+	 */
 	@Override
 	public void train(String passage) {
 		StringTokenizer st = new StringTokenizer(passage);
@@ -65,10 +73,18 @@ public class RadixTrieWordComplete implements AutoCompleteProvider {
 		return trie.values();
 	}
 	
+	/**
+	 * 
+	 * @return keySet
+	 */
 	public Set<String> examineKeys() {
 		return trie.keySet();
 	}
 	
+	/**
+	 * 
+	 * @return the Trie Structure
+	 */
 	public Trie<String, Candidate> getTrie() {
 		return trie;
 	}

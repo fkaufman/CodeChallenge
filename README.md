@@ -7,6 +7,6 @@ To build:   You must have maven configured and running Java1.8 JDK
 
 > build.sh 
 
-To run:
+To run:   The jar has been built as a shaded executable
 
-> run.sh
+> java -jar CodeChallenge-<version>.jar
